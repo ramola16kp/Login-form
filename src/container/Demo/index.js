@@ -62,9 +62,9 @@ class Demo extends Component {
               <butoon type="button" onClick={this.onRegister} className={!this.state.login ? "toggle-btn" : "toggle-btn btn"}>Register</butoon>
             </div>
             <div className="social-icon">
-              <span><i class="fa fa-facebook"></i></span>
-              <span><i class="fa fa-twitter"></i></span>
-              <span><i class="fa fa-instagram"></i></span>
+              <span className="zoom"><i class="fa fa-facebook "></i></span>
+              <span className="zoom"><i class="fa fa-twitter"></i></span>
+              <span className="zoom"><i class="fa fa-instagram "></i></span>
             </div>
 
             <form className={ this.state.login ? "input-group login-form" : 'input-group'}>
@@ -74,7 +74,7 @@ class Demo extends Component {
               <button type ="submit" className="login-btn" value="Submit">Login In</button>
             </form>
 
-            <form className={  this.state.login ? "input-group " : "input-group register-form"}>
+            <form className={ this.state.login ? "input-group " : "input-group register-form"}>
             <input type="text" className="input-field" placeholder="Enter Username Here" autoFocus/>
               <input type="email" className="input-field" placeholder="Enter Email "/>
               <input type ="pasword" className="input-field" placeholder=" Enter Password "/>
